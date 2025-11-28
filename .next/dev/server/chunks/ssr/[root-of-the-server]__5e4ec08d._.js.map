@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Lenovo/Desktop/Next.js_portfolio/app/about/page.tsx"],"sourcesContent":["import AboutContent from '../src/components/sections/AboutContent'\r\nimport { Metadata } from 'next'\r\n\r\nexport const metadata: Metadata = {\r\n  title: 'About | Sohel Kureshi',\r\n  description: 'Crafting digital experiences with passion and precision'\r\n}\r\n\r\nexport default function Home() {\r\n  return <AboutContent />\r\n}\r\n"],"names":[],"mappings":";;;;;;;;;;;;;;AAGO,MAAM,WAAqB;IAChC,OAAO;IACP,aAAa;AACf;AAEe,SAAS;IACtB,qBAAO,8OAAC;;;;;AACV"}}]
-}
