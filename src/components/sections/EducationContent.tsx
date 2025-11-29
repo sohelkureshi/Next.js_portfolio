@@ -107,163 +107,190 @@ export default function EducationContent() {
       </div>
 
       {/* Active Card Area */}
-      <div className="max-w-4xl mx-auto mb-16 space-y-8">
-        {/* B.Tech Card */}
-        {activeStep === 'btech' && (
-          <div
-            className="relative bg-white/95 backdrop-blur-xl rounded-3xl p-10 lg:p-12 shadow-2xl border border-slate-200/70 transition-all duration-500"
-          >
-            <div className="absolute -top-4 left-10 h-8 w-28 rounded-full bg-emerald-100 border border-emerald-200 flex items-center justify-center text-xs font-semibold text-emerald-700 uppercase tracking-wide">
-              Latest
-            </div>
-
-            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-8 gap-6">
-              <div className="lg:flex-1">
-                <h3 className="text-3xl lg:text-4xl font-black text-slate-900 mb-3 tracking-tight">
-                  Visvesvaraya National Institute of Technology
-                </h3>
-                <div className="text-slate-600 text-lg font-medium">Nagpur, Maharashtra</div>
-              </div>
-              <div className="bg-gradient-to-r from-emerald-50 to-slate-50 border border-emerald-200 px-6 py-3 rounded-2xl">
-                <span className="font-bold text-emerald-700 text-lg select-none">Premier Institute</span>
-              </div>
-            </div>
-
-            <div className="grid lg:grid-cols-2 gap-10 mb-10">
-              <div>
-                <h4 className="text-2xl font-bold text-slate-900 mb-2">Bachelor of Technology</h4>
-                <div className="text-slate-600 text-xl font-medium mb-4">2021 - 2025</div>
-              </div>
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center p-6 bg-slate-50 rounded-2xl border border-slate-200 shadow-sm">
-                  <div className="text-4xl font-black text-slate-900 mb-1">7.60</div>
-                  <div className="text-slate-600 font-medium">CGPA / 10.0</div>
-                </div>
-                <div className="text-center p-6 bg-slate-50 rounded-2xl border border-slate-200 shadow-sm">
-                  <div className="text-4xl font-black text-slate-900 mb-1">4</div>
-                  <div className="text-slate-600 font-medium">Years</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="mb-10">
-              <h5 className="text-2xl font-bold text-slate-900 mb-5">Relevant Coursework</h5>
-              <div className="flex flex-wrap gap-3">
-                <span className="px-5 py-2.5 bg-emerald-50 border border-emerald-200 rounded-xl text-emerald-700 font-medium select-none">
-                  Data Structures & Algorithms
-                </span>
-                <span className="px-5 py-2.5 bg-emerald-50 border border-emerald-200 rounded-xl text-emerald-700 font-medium select-none">
-                  Object Oriented Programming
-                </span>
-                <span className="px-5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-800 font-medium select-none">
-                  Database Management Systems
-                </span>
-                <span className="px-5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-800 font-medium select-none">
-                  Operating Systems
-                </span>
-                <span className="px-5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-800 font-medium select-none">
-                  System Design
-                </span>
-              </div>
-            </div>
-
-            <div>
-              <h5 className="text-2xl font-bold text-slate-900 mb-5">Key Highlights</h5>
-              <ul className="space-y-3 text-lg text-slate-700 max-w-2xl">
-                <li className="flex items-start gap-3">
-                  <span className="mt-2 w-2 h-2 rounded-full bg-emerald-400 flex-shrink-0" />
-                  <span>Specialized in programming and software development alongside core engineering</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-2 w-2 h-2 rounded-full bg-emerald-400 flex-shrink-0" />
-                  <span>Completed multiple full-stack development projects</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-2 w-2 h-2 rounded-full bg-emerald-400 flex-shrink-0" />
-                  <span>Active participant in technical workshops and coding competitions</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        )}
-
-        {/* HSC Card */}
-        {activeStep === 'hsc' && (
-          <div className="relative bg-white/95 backdrop-blur-xl rounded-3xl p-10 lg:p-12 shadow-2xl border border-slate-200/70 transition-all duration-500">
-            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-8 gap-6">
-              <div className="lg:flex-1">
-                <h3 className="text-3xl lg:text-4xl font-black text-slate-900 mb-3">Milind College of Science</h3>
-                <div className="text-slate-600 text-lg font-medium">Aurangabad, Maharashtra</div>
-              </div>
-              <div className="bg-gradient-to-r from-emerald-50 to-slate-50 border border-emerald-200 px-6 py-3 rounded-2xl">
-                <span className="font-bold text-emerald-700 text-lg select-none">Higher Secondary</span>
-              </div>
-            </div>
-
-            <div className="grid lg:grid-cols-2 gap-10 mb-10">
-              <div>
-                <h4 className="text-2xl font-bold text-slate-900 mb-2">Class XII - Science Stream (HSC)</h4>
-                <div className="text-slate-600 text-xl font-medium mb-4">2019 - 2020</div>
-              </div>
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center p-6 bg-slate-50 rounded-2xl border border-slate-200 shadow-sm">
-                  <div className="text-4xl font-black text-slate-900 mb-1">84.12%</div>
-                  <div className="text-slate-600 font-medium">Percentage</div>
-                </div>
-                <div className="flex items-center justify-center p-6 bg-gradient-to-r from-emerald-50 to-slate-50 border border-emerald-200 rounded-2xl">
-                  <span className="font-bold text-emerald-700 select-none">Excellent</span>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <h5 className="text-2xl font-bold text-slate-900 mb-5">Core Subjects</h5>
-              <div className="flex flex-wrap gap-4">
-                <span className="px-6 py-3 bg-slate-50 border border-slate-200 rounded-xl font-semibold text-slate-800 select-none">Physics</span>
-                <span className="px-6 py-3 bg-slate-50 border border-slate-200 rounded-xl font-semibold text-slate-800 select-none">Chemistry</span>
-                <span className="px-6 py-3 bg-slate-50 border border-slate-200 rounded-xl font-semibold text-slate-800 select-none">Mathematics</span>
-              </div>
-            </div>
-          </div>
-        )}
-
-        {/* SSC Card */}
-        {activeStep === 'ssc' && (
-          <div className="relative bg-white/95 backdrop-blur-xl rounded-3xl p-10 lg:p-12 shadow-2xl border border-slate-200/70 transition-all duration-500">
-            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-8 gap-6">
-              <div className="lg:flex-1">
-                <h3 className="text-3xl lg:text-4xl font-black text-slate-900 mb-3">CSK Jain English School</h3>
-                <div className="text-slate-600 text-lg font-medium">Jalna, Maharashtra</div>
-              </div>
-              <div className="bg-gradient-to-r from-emerald-50 to-slate-50 border border-emerald-200 px-6 py-3 rounded-2xl">
-                <span className="font-bold text-emerald-700 text-lg select-none">Secondary</span>
-              </div>
-            </div>
-
-            <div className="grid lg:grid-cols-2 gap-10 mb-10">
-              <div>
-                <h4 className="text-2xl font-bold text-slate-900 mb-2">Class X - Secondary School Certificate (SSC)</h4>
-                <div className="text-slate-600 text-xl font-medium mb-4">2017 - 2018</div>
-              </div>
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center p-6 bg-slate-50 rounded-2xl border border-slate-200 shadow-sm">
-                  <div className="text-4xl font-black text-slate-900 mb-1">90.80%</div>
-                  <div className="text-slate-600 font-medium">Percentage</div>
-                </div>
-                <div className="flex items-center justify-center p-6 bg-gradient-to-r from-emerald-50 to-slate-50 border border-emerald-200 rounded-2xl">
-                  <span className="font-bold text-emerald-700 select-none">Outstanding</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="p-8 bg-gradient-to-r from-slate-50 to-emerald-50 border-l-4 border-emerald-400 rounded-2xl">
-              <p className="text-lg text-slate-700 font-medium">
-                Strong foundation in mathematics and sciences that sparked interest in technology and problem-solving
-              </p>
-            </div>
-          </div>
-        )}
+<div className="max-w-4xl mx-auto mb-16 space-y-8">
+  {/* B.Tech Card */}
+  {activeStep === 'btech' && (
+    <div
+      className="relative bg-white/95 backdrop-blur-xl rounded-3xl p-10 lg:p-12 shadow-2xl border border-slate-200/70 transition-all duration-500"
+    >
+      <div className="absolute -top-4 left-10 h-8 w-28 rounded-full bg-emerald-100 border border-emerald-200 flex items-center justify-center text-xs font-semibold text-emerald-700 uppercase tracking-wide">
+        Latest
       </div>
+
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-8 gap-6">
+        <div className="lg:flex-1">
+          <h3 className="text-3xl lg:text-4xl font-black text-slate-900 mb-3 tracking-tight">
+            Visvesvaraya National Institute of Technology
+          </h3>
+          <div className="text-slate-600 text-lg font-medium">Nagpur, Maharashtra</div>
+        </div>
+        <div className="bg-gradient-to-r from-emerald-50 to-slate-50 border border-emerald-200 px-6 py-3 rounded-2xl">
+          <span className="font-bold text-emerald-700 text-lg select-none">Premier Institute</span>
+        </div>
+      </div>
+
+      <div className="grid lg:grid-cols-2 gap-10 mb-10">
+        <div>
+          <h4 className="text-2xl font-bold text-slate-900 mb-2">Bachelor of Technology</h4>
+          <div className="text-slate-600 text-xl font-medium mb-4">2021 - 2025</div>
+        </div>
+        <div className="grid grid-cols-2 gap-6">
+          <div className="text-center p-6 bg-slate-50 rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+            <div className="text-2xl sm:text-4xl font-black text-slate-900 mb-1 leading-none whitespace-nowrap text-center">
+              7.60
+            </div>
+
+            <div className="text-slate-600 font-medium">CGPA / 10.0</div>
+          </div>
+          <div className="text-center p-6 bg-slate-50 rounded-2xl border border-slate-200 shadow-sm">
+            <div className="text-3xl sm:text-4xl font-black text-slate-900 mb-1 leading-none">
+              4
+            </div>
+            <div className="text-slate-600 font-medium">Years</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mb-10">
+        <h5 className="text-2xl font-bold text-slate-900 mb-5">Relevant Coursework</h5>
+        <div className="flex flex-wrap gap-3">
+          <span className="px-5 py-2.5 bg-emerald-50 border border-emerald-200 rounded-xl text-emerald-700 font-medium select-none">
+            Data Structures & Algorithms
+          </span>
+          <span className="px-5 py-2.5 bg-emerald-50 border border-emerald-200 rounded-xl text-emerald-700 font-medium select-none">
+            Object Oriented Programming
+          </span>
+          <span className="px-5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-800 font-medium select-none">
+            Database Management Systems
+          </span>
+          <span className="px-5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-800 font-medium select-none">
+            Operating Systems
+          </span>
+          <span className="px-5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-800 font-medium select-none">
+            System Design
+          </span>
+        </div>
+      </div>
+
+      <div>
+        <h5 className="text-2xl font-bold text-slate-900 mb-5">Key Highlights</h5>
+        <ul className="space-y-3 text-lg text-slate-700 max-w-2xl">
+          <li className="flex items-start gap-3">
+            <span className="mt-2 w-2 h-2 rounded-full bg-emerald-400 flex-shrink-0" />
+            <span>Specialized in programming and software development alongside core engineering</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-2 w-2 h-2 rounded-full bg-emerald-400 flex-shrink-0" />
+            <span>Completed multiple full-stack development projects</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-2 w-2 h-2 rounded-full bg-emerald-400 flex-shrink-0" />
+            <span>Active participant in technical workshops and coding competitions</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  )}
+
+  {/* HSC Card */}
+  {activeStep === 'hsc' && (
+    <div className="relative bg-white/95 backdrop-blur-xl rounded-3xl p-10 lg:p-12 shadow-2xl border border-slate-200/70 transition-all duration-500">
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-8 gap-6">
+        <div className="lg:flex-1">
+          <h3 className="text-3xl lg:text-4xl font-black text-slate-900 mb-3">
+            Milind College of Science
+          </h3>
+          <div className="text-slate-600 text-lg font-medium">Aurangabad, Maharashtra</div>
+        </div>
+        <div className="bg-gradient-to-r from-emerald-50 to-slate-50 border border-emerald-200 px-6 py-3 rounded-2xl">
+          <span className="font-bold text-emerald-700 text-lg select-none">Higher Secondary</span>
+        </div>
+      </div>
+
+      <div className="grid lg:grid-cols-2 gap-10 mb-10">
+        <div>
+          <h4 className="text-2xl font-bold text-slate-900 mb-2">
+            Class XII - Science Stream (HSC)
+          </h4>
+          <div className="text-slate-600 text-xl font-medium mb-4">2019 - 2020</div>
+        </div>
+        <div className="grid grid-cols-2 gap-6">
+          <div className="text-center p-6 bg-slate-50 rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+           <div className="text-2xl sm:text-4xl font-black text-slate-900 mb-1 leading-none whitespace-nowrap text-center">
+              84.12%
+            </div>
+
+            <div className="text-slate-600 font-medium">Percentage</div>
+          </div>
+          <div className="flex items-center justify-center p-6 bg-gradient-to-r from-emerald-50 to-slate-50 border border-emerald-200 rounded-2xl">
+            <span className="font-bold text-emerald-700 select-none">Excellent</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h5 className="text-2xl font-bold text-slate-900 mb-5">Core Subjects</h5>
+        <div className="flex flex-wrap gap-4">
+          <span className="px-6 py-3 bg-slate-50 border border-slate-200 rounded-xl font-semibold text-slate-800 select-none">
+            Physics
+          </span>
+          <span className="px-6 py-3 bg-slate-50 border border-slate-200 rounded-xl font-semibold text-slate-800 select-none">
+            Chemistry
+          </span>
+          <span className="px-6 py-3 bg-slate-50 border border-slate-200 rounded-xl font-semibold text-slate-800 select-none">
+            Mathematics
+          </span>
+        </div>
+      </div>
+    </div>
+  )}
+
+  {/* SSC Card */}
+  {activeStep === 'ssc' && (
+    <div className="relative bg-white/95 backdrop-blur-xl rounded-3xl p-10 lg:p-12 shadow-2xl border border-slate-200/70 transition-all duration-500">
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-8 gap-6">
+        <div className="lg:flex-1">
+          <h3 className="text-3xl lg:text-4xl font-black text-slate-900 mb-3">
+            CSK Jain English School
+          </h3>
+          <div className="text-slate-600 text-lg font-medium">Jalna, Maharashtra</div>
+        </div>
+        <div className="bg-gradient-to-r from-emerald-50 to-slate-50 border border-emerald-200 px-6 py-3 rounded-2xl">
+          <span className="font-bold text-emerald-700 text-lg select-none">Secondary</span>
+        </div>
+      </div>
+
+      <div className="grid lg:grid-cols-2 gap-10 mb-10">
+        <div>
+          <h4 className="text-2xl font-bold text-slate-900 mb-2">
+            Class X - Secondary School Certificate (SSC)
+          </h4>
+          <div className="text-slate-600 text-xl font-medium mb-4">2017 - 2018</div>
+        </div>
+        <div className="grid grid-cols-2 gap-6">
+          <div className="text-center p-6 bg-slate-50 rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+            <div className="text-2xl sm:text-4xl font-black text-slate-900 mb-1 leading-none whitespace-nowrap text-center">
+              90.80%
+            </div>
+
+            <div className="text-slate-600 font-medium">Percentage</div>
+          </div>
+          <div className="flex items-center justify-center p-6 bg-gradient-to-r from-emerald-50 to-slate-50 border border-emerald-200 rounded-2xl">
+            <span className="font-bold text-emerald-700 select-none">Outstanding</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="p-8 bg-gradient-to-r from-slate-50 to-emerald-50 border-l-4 border-emerald-400 rounded-2xl">
+        <p className="text-lg text-slate-700 font-medium">
+          Strong foundation in mathematics and sciences that sparked interest in technology
+          and problem-solving
+        </p>
+      </div>
+    </div>
+  )}
+</div>
+
 
       {/* Summary */}
       <div className="bg-white/95 backdrop-blur-xl rounded-3xl p-14 shadow-2xl border border-slate-200">
@@ -277,7 +304,7 @@ export default function EducationContent() {
           </div>
           <div className="p-10 bg-slate-50 rounded-2xl border border-slate-200 hover:border-emerald-300 hover:shadow-xl transition-all text-center hover:-translate-y-2">
             <div className="text-5xl font-black text-slate-900 mb-3">7.60</div>
-            <div className="text-slate-600 text-xl font-semibold">Current CGPA</div>
+            <div className="text-slate-600 text-xl font-semibold"> CGPA out of 10</div>
           </div>
           <div className="p-10 bg-slate-50 rounded-2xl border border-slate-200 hover:border-emerald-300 hover:shadow-xl transition-all text-center hover:-translate-y-2">
             <div className="text-5xl font-black text-slate-900 mb-3">85%+</div>

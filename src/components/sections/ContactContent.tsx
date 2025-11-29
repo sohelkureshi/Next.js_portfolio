@@ -105,10 +105,16 @@ export default function ContactContent() {
 
           {/* LinkedIn */}
           <div className="group p-6 bg-white/90 backdrop-blur-xl rounded-3xl border border-slate-200 hover:border-emerald-300 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-            <div className="w-12 h-12 bg-slate-100 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-slate-200 transition-all shadow-sm">
-              <div className="w-7 h-7 rounded-lg bg-slate-900 flex items-center justify-center">
-                <span className="text-[10px] font-bold text-white">in</span>
-              </div>
+            <div className="w-12 h-12 bg-emerald-50 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-emerald-100 transition-all shadow-sm">
+              {/* LinkedIn Icon (clean simple SVG like phone/mail) */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-6 h-6"
+                fill="#047857"
+                viewBox="0 0 24 24"
+              >
+                <path d="M4.98 3.5C4.98 4.6 4.1 5.5 3 5.5C1.9 5.5 1 4.6 1 3.5C1 2.4 1.9 1.5 3 1.5C4.1 1.5 4.98 2.4 4.98 3.5ZM1.5 8H4.5V22H1.5V8ZM8 8H11V9.8H11.1C11.6 8.9 12.9 7.9 14.8 7.9C19 7.9 19.5 10.6 19.5 14.2V22H16.5V14.9C16.5 13 16.5 10.8 14 10.8C11.5 10.8 11.2 12.7 11.2 14.7V22H8V8Z" />
+              </svg>
             </div>
 
             <h4 className="text-2xl font-bold text-slate-900 mb-1">LinkedIn</h4>
@@ -126,19 +132,15 @@ export default function ContactContent() {
 
           {/* GitHub */}
           <div className="group p-6 bg-white/90 backdrop-blur-xl rounded-3xl border border-slate-200 hover:border-emerald-300 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-            <div className="w-12 h-12 bg-slate-900 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-slate-800 transition-all shadow-sm">
-              {/* GitHub Icon */}
+            <div className="w-12 h-12 bg-emerald-50 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-emerald-100 transition-all shadow-sm">
+              {/* GitHub Icon (same emerald theme) */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-7 h-7"
                 viewBox="0 0 24 24"
-                fill="currentColor"
+                fill="#047857"
               >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.08 3.29 9.38 7.86 10.9.58.1.79-.25.79-.56v-1.98c-3.2.7-3.88-1.39-3.88-1.39-.53-1.36-1.3-1.72-1.3-1.72-1.06-.74.08-.73.08-.73 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.26 3.4.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.3 1.19-3.11-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.19a10.9 10.9 0 0 1 5.8 0c2.2-1.5 3.18-1.19 3.18-1.19.63 1.58.23 2.75.11 3.04.74.82 1.18 1.86 1.18 3.11 0 4.43-2.69 5.41-5.26 5.69.41.36.77 1.08.77 2.18v3.23c0 .31.2.67.8.56A11.51 11.51 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"
-                />
+                <path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.08 3.2 9.36 7.7 10.9c.6.1.8-.25.8-.55v-2c-3.2.7-3.9-1.4-3.9-1.4c-.5-1.4-1.3-1.7-1.3-1.7c-1-.8.1-.8.1-.8c1.2.1 1.8 1.2 1.8 1.2c1 1.8 2.7 1.3 3.4.9c.1-.8.4-1.3.7-1.6c-2.6-.3-5.3-1.3-5.3-5.7c0-1.3.5-2.3 1.2-3.1c-.1-.3-.5-1.5.1-3c0 0 1-.3 3.2 1.2a10.7 10.7 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2c.6 1.6.2 2.8.1 3c.8.8 1.2 1.8 1.2 3.1c0 4.4-2.7 5.4-5.3 5.7c.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12A11.5 11.5 0 0 0 12 .5Z" />
               </svg>
             </div>
 
@@ -154,6 +156,7 @@ export default function ContactContent() {
               Visit GitHub Profile
             </a>
           </div>
+
 
           {/* WhatsApp / Phone */}
           <div className="group p-6 bg-white/90 backdrop-blur-xl rounded-3xl border border-slate-200 hover:border-emerald-300 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">

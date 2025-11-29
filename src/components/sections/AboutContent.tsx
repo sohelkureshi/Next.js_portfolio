@@ -109,12 +109,19 @@ export default function AboutContent() {
       {/* What Drives Me */}
       <section className="max-w-full bg-white py-14 lg:py-16 mt-4 border-t border-slate-100">
         <div className="max-w-7xl mx-auto px-4 lg:px-8 text-center">
-          <h3 className="text-3xl lg:text-4xl font-extrabold mb-7 flex items-center justify-center text-slate-900 tracking-tight mx-auto max-w-max">
-            <span className="mr-3 inline-flex items-center justify-center w-9 h-9 rounded-full bg-emerald-50 border border-emerald-200">
-              <i className="bi bi-heart-fill text-emerald-600 text-lg" />
-            </span>
-            <span>What Drives Me</span>
-          </h3>
+          <h3 className="text-3xl lg:text-4xl font-extrabold mb-7 flex items-center justify-center gap-3 text-slate-900 tracking-tight select-none">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-7 h-7 text-emerald-600"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path d="M12 17.3l6.18 3.7-1.64-7 5.46-4.7-7.19-.6L12 2 9.19 8.7l-7.19.6 5.46 4.7-1.64 7L12 17.3z" />
+        </svg>
+
+        <span>What Drives Me</span>
+      </h3>
+
 
           <div className="flex flex-wrap justify-center gap-5">
             {['Clean Code', 'Team Collaboration', 'Innovation', 'Continuous Learning'].map((item) => (

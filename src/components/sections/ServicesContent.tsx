@@ -21,172 +21,212 @@ export default function ServicesContent() {
       </div>
 
       {/* Services Grid */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-        {/* Full-Stack Development */}
-     <div className="group relative p-8 rounded-3xl bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:border-emerald-500/80 hover:-translate-y-1.5 transition-all duration-300">
-      <div className="mb-6 flex items-center gap-4">
-        <div className="flex items-center justify-center w-12 h-12 rounded-2xl border border-emerald-500/60 bg-emerald-50">
-          {/* Simple icon */}
-          <div className="w-6 h-6 border-[1.5px] border-emerald-600 rounded-md flex items-center justify-center">
-            <span className="w-3 h-[2px] bg-emerald-600" />
-          </div>
-        </div>
-        <div>
-          <h3 className="text-xl font-bold text-slate-900">
-            Full-Stack Web Development
-          </h3>
-          <p className="text-xs font-medium text-emerald-700 uppercase tracking-[0.16em] mt-1">
-            High-performance MERN applications
-          </p>
-        </div>
+<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+  {/* Full-Stack Development */}
+  <div className="group relative p-8 rounded-3xl bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:border-emerald-500/80 hover:-translate-y-1.5 transition-all duration-300">
+    <div className="mb-6 flex items-center gap-4">
+      <div className="flex items-center justify-center w-12 h-12 rounded-2xl border border-emerald-500/60 bg-emerald-50">
+        {/* Full-Stack icon: browser + server */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#047857"
+          strokeWidth={1.7}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          {/* top: browser */}
+          <rect x="3" y="4" width="18" height="7" rx="1.5" />
+          <path d="M6 6.5h2" />
+          <path d="M9.5 6.5h2" />
+          {/* bottom: server / API box */}
+          <rect x="5" y="14" width="14" height="6" rx="1.5" />
+          <path d="M8 17h4" />
+          <path d="M14.5 17h1.5" />
+        </svg>
       </div>
-
-      <ul className="space-y-3 mb-6 text-sm text-slate-700">
-        <li className="flex items-start gap-3">
-          <span className="mt-1 w-1.5 h-1.5 bg-emerald-500 rounded-full flex-shrink-0" />
-          <span>React.js Frontend</span>
-        </li>
-        <li className="flex items-start gap-3">
-          <span className="mt-1 w-1.5 h-1.5 bg-emerald-500 rounded-full flex-shrink-0" />
-          <span>Node.js Backend</span>
-        </li>
-        <li className="flex items-start gap-3">
-          <span className="mt-1 w-1.5 h-1.5 bg-emerald-500 rounded-full flex-shrink-0" />
-          <span>Database Design</span>
-        </li>
-        <li className="flex items-start gap-3">
-          <span className="mt-1 w-1.5 h-1.5 bg-emerald-500 rounded-full flex-shrink-0" />
-          <span>API Development</span>
-        </li>
-      </ul>
-
-      <div className="flex items-center justify-between mt-4 pt-4 border-t border-slate-100">
-        <div className="px-3 py-1 rounded-full bg-emerald-50 border border-emerald-100 text-xs font-semibold text-emerald-700">
-          Web Apps · MERN · APIs
-        </div>
-        <div className="text-right">
-          <span className="block text-[11px] uppercase tracking-[0.16em] text-slate-500">
-            Next step
-          </span>
-          <span className="text-xl font-bold text-slate-900">
-            Request Estimate
-          </span>
-        </div>
+      <div>
+        <h3 className="text-xl font-bold text-slate-900">
+          Full-Stack Web Development
+        </h3>
+        <p className="text-xs font-medium text-emerald-700 uppercase tracking-[0.16em] mt-1">
+          High-performance MERN applications
+        </p>
       </div>
     </div>
 
-    {/* UI/UX Design */}
-    <div className="group relative p-8 rounded-3xl bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:border-emerald-500/80 hover:-translate-y-1.5 transition-all duration-300">
-      <div className="mb-6 flex items-center gap-4">
-        <div className="flex items-center justify-center w-12 h-12 rounded-2xl border border-emerald-500/60 bg-emerald-50">
-          {/* Simple layout icon */}
-          <div className="w-6 h-6 rounded-md border border-emerald-600 flex flex-col overflow-hidden">
-            <div className="h-[40%] border-b border-emerald-600/70" />
-            <div className="flex-1 flex">
-              <div className="w-[38%] border-r border-emerald-600/70" />
-              <div className="flex-1" />
-            </div>
-          </div>
-        </div>
-        <div>
-          <h3 className="text-xl font-bold text-slate-900">
-            UI/UX Design &amp; Frontend
-          </h3>
-          <p className="text-xs font-medium text-emerald-700 uppercase tracking-[0.16em] mt-1">
-            Beautiful, accessible interfaces
-          </p>
-        </div>
+    <ul className="space-y-3 mb-6 text-sm text-slate-700">
+      <li className="flex items-start gap-3">
+        <span className="mt-1 w-1.5 h-1.5 bg-emerald-500 rounded-full flex-shrink-0" />
+        <span>React.js Frontend</span>
+      </li>
+      <li className="flex items-start gap-3">
+        <span className="mt-1 w-1.5 h-1.5 bg-emerald-500 rounded-full flex-shrink-0" />
+        <span>Node.js Backend</span>
+      </li>
+      <li className="flex items-start gap-3">
+        <span className="mt-1 w-1.5 h-1.5 bg-emerald-500 rounded-full flex-shrink-0" />
+        <span>Database Design</span>
+      </li>
+      <li className="flex items-start gap-3">
+        <span className="mt-1 w-1.5 h-1.5 bg-emerald-500 rounded-full flex-shrink-0" />
+        <span>API Development</span>
+      </li>
+    </ul>
+
+    <div className="flex items-center justify-between mt-4 pt-4 border-t border-slate-100">
+      <div className="px-3 py-1 rounded-full bg-emerald-50 border border-emerald-100 text-xs font-semibold text-emerald-700">
+        Web Apps · MERN · APIs
       </div>
+      <div className="text-right">
+        <span className="block text-[11px] uppercase tracking-[0.16em] text-slate-500">
+          Next step
+        </span>
+        <span className="text-xl font-bold text-slate-900">
+          Request Estimate
+        </span>
+      </div>
+    </div>
+  </div>
 
-      <ul className="space-y-3 mb-6 text-sm text-slate-700">
-        <li className="flex items-start gap-3">
-          <span className="mt-1 w-1.5 h-1.5 bg-emerald-500 rounded-full flex-shrink-0" />
-          <span>Responsive Design</span>
-        </li>
-        <li className="flex items-start gap-3">
-          <span className="mt-1 w-1.5 h-1.5 bg-emerald-500 rounded-full flex-shrink-0" />
-          <span>User Research</span>
-        </li>
-        <li className="flex items-start gap-3">
-          <span className="mt-1 w-1.5 h-1.5 bg-emerald-500 rounded-full flex-shrink-0" />
-          <span>Prototyping</span>
-        </li>
-        <li className="flex items-start gap-3">
-          <span className="mt-1 w-1.5 h-1.5 bg-emerald-500 rounded-full flex-shrink-0" />
-          <span>CSS Animations</span>
-        </li>
-      </ul>
-
-      <div className="flex items-center justify-between mt-4 pt-4 border-t border-slate-100">
-        <div className="px-3 py-1 rounded-full bg-slate-50 border border-slate-200 text-xs font-semibold text-slate-700">
-          UI/UX · Frontend · Branding
-        </div>
-        <div className="text-right">
-          <span className="block text-[11px] uppercase tracking-[0.16em] text-slate-500">
-            Pricing
-          </span>
-          <span className="text-xl font-bold text-slate-900">
-            Transparent &amp; scoped
-          </span>
-        </div>
+  {/* UI/UX Design */}
+  <div className="group relative p-8 rounded-3xl bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:border-emerald-500/80 hover:-translate-y-1.5 transition-all duration-300">
+    <div className="mb-6 flex items-center gap-4">
+      <div className="flex items-center justify-center w-12 h-12 rounded-2xl border border-emerald-500/60 bg-emerald-50">
+        {/* UI layout + cursor icon */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#047857"
+          strokeWidth={1.7}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          {/* layout frame */}
+          <rect x="3.5" y="4" width="11" height="14" rx="1.5" />
+          <path d="M3.5 8h11" />
+          <path d="M8 4v14" />
+          {/* cursor over layout */}
+          <path d="M15.5 9.5 20.5 12 17.4 13.1 18.5 16.5 16.8 17.2 15.7 13.9 13.5 15.1 15.5 9.5Z" />
+        </svg>
+      </div>
+      <div>
+        <h3 className="text-xl font-bold text-slate-900">
+          UI/UX Design &amp; Frontend
+        </h3>
+        <p className="text-xs font-medium text-emerald-700 uppercase tracking-[0.16em] mt-1">
+          Beautiful, accessible interfaces
+        </p>
       </div>
     </div>
 
-    {/* Data Analytics & ML Solutions */}
-    <div className="group relative p-8 rounded-3xl bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:border-emerald-500/80 hover:-translate-y-1.5 transition-all duration-300">
-      <div className="mb-6 flex items-center gap-4">
-        <div className="flex items-center justify-center w-12 h-12 rounded-2xl border border-emerald-500/60 bg-emerald-50">
-          {/* Simple graph icon */}
-          <div className="w-6 h-6 flex items-end gap-0.5">
-            <div className="w-1.5 h-3 rounded-sm bg-emerald-500" />
-            <div className="w-1.5 h-4 rounded-sm bg-emerald-500/80" />
-            <div className="w-1.5 h-5 rounded-sm bg-emerald-600" />
-          </div>
-        </div>
-        <div>
-          <h3 className="text-xl font-bold text-slate-900">
-            Data Analytics &amp; ML Solutions
-          </h3>
-          <p className="text-xs font-medium text-emerald-700 uppercase tracking-[0.16em] mt-1">
-            Dashboards, models &amp; insights
-          </p>
-        </div>
+    <ul className="space-y-3 mb-6 text-sm text-slate-700">
+      <li className="flex items-start gap-3">
+        <span className="mt-1 w-1.5 h-1.5 bg-emerald-500 rounded-full flex-shrink-0" />
+        <span>Responsive Design</span>
+      </li>
+      <li className="flex items-start gap-3">
+        <span className="mt-1 w-1.5 h-1.5 bg-emerald-500 rounded-full flex-shrink-0" />
+        <span>User Research</span>
+      </li>
+      <li className="flex items-start gap-3">
+        <span className="mt-1 w-1.5 h-1.5 bg-emerald-500 rounded-full flex-shrink-0" />
+        <span>Prototyping</span>
+      </li>
+      <li className="flex items-start gap-3">
+        <span className="mt-1 w-1.5 h-1.5 bg-emerald-500 rounded-full flex-shrink-0" />
+        <span>CSS Animations</span>
+      </li>
+    </ul>
+
+    <div className="flex items-center justify-between mt-4 pt-4 border-t border-slate-100">
+      <div className="px-3 py-1 rounded-full bg-emerald-50 border border-emerald-100 text-xs font-semibold text-emerald-700">
+        UI/UX · Frontend · Branding
       </div>
 
-      <ul className="space-y-3 mb-6 text-sm text-slate-700">
-        <li className="flex items-start gap-3">
-          <span className="mt-1 w-1.5 h-1.5 bg-emerald-500 rounded-full flex-shrink-0" />
-          <span>Exploratory Analysis &amp; Reporting</span>
-        </li>
-        <li className="flex items-start gap-3">
-          <span className="mt-1 w-1.5 h-1.5 bg-emerald-500 rounded-full flex-shrink-0" />
-          <span>Interactive Dashboards</span>
-        </li>
-        <li className="flex items-start gap-3">
-          <span className="mt-1 w-1.5 h-1.5 bg-emerald-500 rounded-full flex-shrink-0" />
-          <span>Predictive Models &amp; Forecasting</span>
-        </li>
-        <li className="flex items-start gap-3">
-          <span className="mt-1 w-1.5 h-1.5 bg-emerald-500 rounded-full flex-shrink-0" />
-          <span>Deployment &amp; Monitoring (MLOps)</span>
-        </li>
-      </ul>
-
-      <div className="flex items-center justify-between mt-4 pt-4 border-t border-slate-100">
-        <div className="px-3 py-1 rounded-full bg-slate-50 border border-slate-200 text-xs font-semibold text-slate-700">
-          Analytics · Dashboards · ML
-        </div>
-        <div className="text-right">
-          <span className="block text-[11px] uppercase tracking-[0.16em] text-slate-500">
-            Engagement
-          </span>
-          <span className="text-xl font-bold text-slate-900">
-            Fixed project pricing
-          </span>
-        </div>
+      <div className="text-right">
+        <span className="block text-[11px] uppercase tracking-[0.16em] text-slate-500">
+          Pricing
+        </span>
+        <span className="text-xl font-bold text-slate-900">
+          Transparent &amp; scoped
+        </span>
       </div>
     </div>
+  </div>
+
+  {/* Data Analytics & ML Solutions */}
+  <div className="group relative p-8 rounded-3xl bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:border-emerald-500/80 hover:-translate-y-1.5 transition-all duration-300">
+    <div className="mb-6 flex items-center gap-4">
+      <div className="flex items-center justify-center w-12 h-12 rounded-2xl border border-emerald-500/60 bg-emerald-50">
+        {/* Analytics chart + trend line icon */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#047857"
+          strokeWidth={1.7}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M4 18V6" />
+          <path d="M4 18h16" />
+          <rect x="6.5" y="11" width="2.5" height="5" rx="0.4" />
+          <rect x="11" y="9" width="2.5" height="7" rx="0.4" />
+          <rect x="15.5" y="7" width="2.5" height="9" rx="0.4" />
+          <path d="M6 10l3-2.5L12 11l4-4 2 1.5" />
+        </svg>
       </div>
+      <div>
+        <h3 className="text-xl font-bold text-slate-900">
+          Data Analytics &amp; ML Solutions
+        </h3>
+        <p className="text-xs font-medium text-emerald-700 uppercase tracking-[0.16em] mt-1">
+          Dashboards, models &amp; insights
+        </p>
+      </div>
+    </div>
+
+    <ul className="space-y-3 mb-6 text-sm text-slate-700">
+      <li className="flex items-start gap-3">
+        <span className="mt-1 w-1.5 h-1.5 bg-emerald-500 rounded-full flex-shrink-0" />
+        <span>Exploratory Analysis &amp; Reporting</span>
+      </li>
+      <li className="flex items-start gap-3">
+        <span className="mt-1 w-1.5 h-1.5 bg-emerald-500 rounded-full flex-shrink-0" />
+        <span>Interactive Dashboards</span>
+      </li>
+      <li className="flex items-start gap-3">
+        <span className="mt-1 w-1.5 h-1.5 bg-emerald-500 rounded-full flex-shrink-0" />
+        <span>Predictive Models &amp; Forecasting</span>
+      </li>
+      <li className="flex items-start gap-3">
+        <span className="mt-1 w-1.5 h-1.5 bg-emerald-500 rounded-full flex-shrink-0" />
+        <span>Deployment &amp; Monitoring (MLOps)</span>
+      </li>
+    </ul>
+
+    <div className="flex items-center justify-between mt-4 pt-4 border-t border-slate-100">
+      <div className="px-3 py-1 rounded-full bg-emerald-50 border border-emerald-100 text-xs font-semibold text-emerald-700">
+        Analytics · Dashboards · ML
+      </div>
+
+      <div className="text-right">
+        <span className="block text-[11px] uppercase tracking-[0.16em] text-slate-500">
+          Engagement
+        </span>
+        <span className="text-xl font-bold text-slate-900">
+          Fixed project pricing
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
 
       {/* Process Section */}
       <div className="mb-20 rounded-3xl border border-slate-200 bg-white/95 backdrop-blur-xl p-10 md:p-14 shadow-xl">
@@ -255,7 +295,7 @@ export default function ServicesContent() {
                      hover:bg-slate-800 active:scale-[0.98] transition-all"
         >
           <span className="w-2 h-2 rounded-full bg-emerald-400" />
-          <span>Get in touch about a project</span>
+          <span>Start Your Project</span>
         </Link>
       </div>
     </section>
