@@ -28,66 +28,67 @@ export default function ResumeContent() {
 
       {/* Quick Actions */}
       <div className="mb-14">
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center">
-          {/* Download PDF (Google Drive) */}
-          <a
-            href="https://drive.google.com/uc?export=download&id=1lAO3ZQfPui5a5ixKilIqAz7oAAmK-_qN"
-            download="Sohel_Kureshi_Resume.pdf"
-            className="inline-flex items-center justify-center gap-3 px-7 py-3.5 rounded-2xl
-                       bg-slate-900 text-white text-sm font-semibold
-                       border border-slate-900 shadow-lg hover:shadow-xl
-                       hover:bg-slate-800 active:scale-[0.98] transition-all"
-          >
-            {/* Download icon */}
-            <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-emerald-500/90">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-3.5 h-3.5 text-white"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={1.8}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M12 4v12" />
-                <path d="M7 11l5 5 5-5" />
-                <rect x="4" y="18" width="16" height="2" rx="1" />
-              </svg>
-            </span>
-            <span>Download PDF</span>
-          </a>
+  <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center">
+    {/* Download PDF (Google Drive) */}
+    <a
+      href="https://drive.google.com/uc?export=download&id=1utd08b8E6NxKdnX6DYngS54sgjVfd4nr"
+      download="Sohel_Kureshi_Resume.pdf"
+      className="inline-flex items-center justify-center gap-3 px-7 py-3.5 rounded-2xl
+                 bg-slate-900 text-white text-sm font-semibold
+                 border border-slate-900 shadow-lg hover:shadow-xl
+                 hover:bg-slate-800 active:scale-[0.98] transition-all"
+    >
+      {/* Download icon */}
+      <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-emerald-500/90">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-3.5 h-3.5 text-white"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={1.8}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M12 4v12" />
+          <path d="M7 11l5 5 5-5" />
+          <rect x="4" y="18" width="16" height="2" rx="1" />
+        </svg>
+      </span>
+      <span>Download PDF</span>
+    </a>
 
-          {/* View Online (Google Drive view link) */}
-          <a
-            href="https://drive.google.com/file/d/1lAO3ZQfPui5a5ixKilIqAz7oAAmK-_qN/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-3 px-7 py-3.5 rounded-2xl
-                       bg-white text-slate-900 text-sm font-semibold
-                       border border-slate-200 shadow-sm hover:shadow-md
-                       hover:border-emerald-400 hover:bg-emerald-50/40 active:scale-[0.98] transition-all"
-          >
-            {/* Eye icon */}
-            <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-slate-900/90">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-3.5 h-3.5 text-white"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={1.7}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M1.5 12s3.5-6.5 10.5-6.5S22.5 12 22.5 12 19 18.5 12 18.5 1.5 12 1.5 12Z" />
-                <circle cx="12" cy="12" r="3" />
-              </svg>
-            </span>
-            <span>View Online</span>
-          </a>
-        </div>
-      </div>
+    {/* View Online (Google Drive view link) */}
+    <a
+      href="https://drive.google.com/file/d/1utd08b8E6NxKdnX6DYngS54sgjVfd4nr/view?usp=sharing"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center justify-center gap-3 px-7 py-3.5 rounded-2xl
+                 bg-white text-slate-900 text-sm font-semibold
+                 border border-slate-200 shadow-sm hover:shadow-md
+                 hover:border-emerald-400 hover:bg-emerald-50/40 active:scale-[0.98] transition-all"
+    >
+      {/* Eye icon */}
+      <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-slate-900/90">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-3.5 h-3.5 text-white"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={1.7}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M1.5 12s3.5-6.5 10.5-6.5S22.5 12 22.5 12 19 18.5 12 18.5 1.5 12 1.5 12Z" />
+          <circle cx="12" cy="12" r="3" />
+        </svg>
+      </span>
+      <span>View Online</span>
+    </a>
+  </div>
+</div>
+
 
       {/* Professional Summary */}
       <div className="mb-14 rounded-3xl border border-slate-200 bg-white/95 backdrop-blur-xl shadow-xl p-8 md:p-10">
