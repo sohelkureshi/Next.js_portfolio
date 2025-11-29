@@ -5,22 +5,25 @@ export default function ExperienceContent() {
   return (
     <section
       id="experience"
+      aria-labelledby="experience-heading"
       className="py-16 lg:py-8 max-w-5xl mx-auto px-4 lg:px-8 bg-white"
     >
-   {/* Section Header */}
-    <div className="relative text-center mb-10 lg:mb-12 z-10">
+      {/* Section Header */}
+      <div className="relative text-center mb-10 lg:mb-12 z-10">
+        <h1
+          id="experience-heading"
+          className="text-4xl md:text-5xl font-bold text-slate-900 mt-4 mb-2 tracking-tight select-none"
+        >
+          Professional Experience
+        </h1>
 
-      <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-4 mb-2 tracking-tight select-none">
-        Professional Experience
-      </h2>
+        <div className="mt-3 w-24 h-1.5 mx-auto rounded-full bg-gradient-to-r from-emerald-500 via-emerald-400 to-emerald-500" />
 
-      <div className="mt-3 w-24 h-1.5 mx-auto rounded-full bg-gradient-to-r from-emerald-500 via-emerald-400 to-emerald-500" />
+        <p className="mt-4 text-base md:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed font-medium">
+          Building solutions that matter
+        </p>
+      </div>
 
-      <p className="mt-4 text-base md:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed font-medium">
-        Building solutions that matter
-      </p>
-      
-    </div>
 
 
       {/* Timeline container */}

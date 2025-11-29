@@ -7,13 +7,17 @@ export default function ResumeContent() {
   return (
     <section
       id="resume"
+      aria-labelledby="resume-heading"
       className="pt-8 pb-16 max-w-4xl mx-auto px-4 bg-white"
     >
       {/* Header */}
       <div className="relative text-center mb-10 lg:mb-12 z-10">
-        <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-4 mb-2 tracking-tight select-none">
+        <h1
+          id="resume-heading"
+          className="text-4xl md:text-5xl font-bold text-slate-900 mt-4 mb-2 tracking-tight select-none"
+        >
           Professional Resume
-        </h2>
+        </h1>
 
         <div className="mt-3 w-24 h-1.5 mx-auto rounded-full bg-gradient-to-r from-emerald-500 via-emerald-400 to-emerald-500" />
 

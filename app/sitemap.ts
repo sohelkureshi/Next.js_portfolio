@@ -1,13 +1,26 @@
-import { MetadataRoute } from 'next'
+// app/sitemap.ts
+import type { MetadataRoute } from 'next'
+
+const SITE_URL = 'https://sohelkureshi.vercel.app'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: 'https://sohelkureshi.vercel.app',
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 1,
-    },
+  const lastModified = new Date()
+
+  const staticRoutes: string[] = [
+    '/',
+    '/experience',
+    '/projects',
+    '/skills',
+    '/education',
+    '/services',
+    '/contact',
+    '/resume',
   ]
+
+  return staticRoutes.map((path) => ({
+    url: `${SITE_URL}${path}`,
+    lastModified,
+    changeFrequency: 'monthly',
+    priority: path === '/' ? 1 : 0.8,
+  }))
 }
-//just for temp

@@ -71,14 +71,17 @@ export default function ProjectsContent() {
   return (
     <section
       id="projects"
+      aria-labelledby="projects-heading"
       className="py-14 lg:py-8 max-w-7xl mx-auto px-4 lg:px-8 bg-white"
     >
       {/* Section Header */}
       <div className="text-center mb-10 lg:mb-12 relative">
-
-        <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-4 mb-2 tracking-tight select-none">
+        <h1
+          id="projects-heading"
+          className="text-4xl md:text-5xl font-bold text-slate-900 mt-4 mb-2 tracking-tight select-none"
+        >
           Featured Work
-        </h2>
+        </h1>
 
         <div className="mt-3 w-24 h-1.5 mx-auto rounded-full bg-gradient-to-r from-emerald-500 via-emerald-400 to-emerald-500" />
 

@@ -21,13 +21,19 @@ export default function EducationContent() {
   }, [activeIndex])
 
   return (
-    <section id="education" className="py-8 max-w-7xl mx-auto px-4 bg-white">
+    <section
+      id="education"
+      aria-labelledby="education-heading"
+      className="py-8 max-w-7xl mx-auto px-4 bg-white"
+    >
       {/* Header */}
       <div className="text-center mb-14">
-
-        <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-4 mb-2 tracking-tight select-none">
+        <h1
+          id="education-heading"
+          className="text-4xl md:text-5xl font-bold text-slate-900 mt-4 mb-2 tracking-tight select-none"
+        >
           Academic Journey
-        </h2>
+        </h1>
 
         <div className="w-24 h-1.5 mx-auto rounded-full bg-gradient-to-r from-emerald-500 via-emerald-400 to-emerald-500 shadow-sm" />
 
