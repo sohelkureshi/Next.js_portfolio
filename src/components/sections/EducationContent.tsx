@@ -220,18 +220,18 @@ export default function EducationContent() {
           </h4>
           <div className="text-slate-600 text-xl font-medium mb-4">2019 - 2020</div>
         </div>
-        <div className="grid grid-cols-2 gap-6">
-          <div className="text-center p-6 bg-slate-50 rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
-           <div className="text-2xl sm:text-4xl font-black text-slate-900 mb-1 leading-none whitespace-nowrap text-center">
-              84.12%
-            </div>
+<div className="grid grid-cols-2 gap-6">
+  <div className="flex flex-col items-center justify-center p-6 bg-slate-50 rounded-2xl border border-slate-200 shadow-sm overflow-hidden w-full">
+    <div className="text-xl sm:text-4xl font-black text-slate-900 mb-1 leading-none">
+      84.15%
+    </div>
+  </div>
+  
+  <div className="flex items-center justify-center p-6 bg-gradient-to-r from-emerald-50 to-slate-50 border border-emerald-200 rounded-2xl">
+    <span className="font-bold text-emerald-700 select-none">Excellent</span>
+  </div>
+</div>
 
-            <div className="text-slate-600 font-medium">Percentage</div>
-          </div>
-          <div className="flex items-center justify-center p-6 bg-gradient-to-r from-emerald-50 to-slate-50 border border-emerald-200 rounded-2xl">
-            <span className="font-bold text-emerald-700 select-none">Excellent</span>
-          </div>
-        </div>
       </div>
 
       <div>
@@ -273,18 +273,18 @@ export default function EducationContent() {
           </h4>
           <div className="text-slate-600 text-xl font-medium mb-4">2017 - 2018</div>
         </div>
-        <div className="grid grid-cols-2 gap-6">
-          <div className="text-center p-6 bg-slate-50 rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
-            <div className="text-2xl sm:text-4xl font-black text-slate-900 mb-1 leading-none whitespace-nowrap text-center">
-              90.80%
-            </div>
+<div className="grid grid-cols-2 gap-6">
+  <div className="flex flex-col items-center justify-center p-6 bg-slate-50 rounded-2xl border border-slate-200 shadow-sm overflow-hidden w-full">
+    <div className="text-xl sm:text-4xl font-black text-slate-900 mb-1 leading-none">
+      90.80%
+    </div>
+  </div>
+  
+  <div className="flex items-center justify-center p-6 bg-gradient-to-r from-emerald-50 to-slate-50 border border-emerald-200 rounded-2xl">
+    <span className="font-bold text-emerald-700 select-none">Outstanding</span>
+  </div>
+</div>
 
-            <div className="text-slate-600 font-medium">Percentage</div>
-          </div>
-          <div className="flex items-center justify-center p-6 bg-gradient-to-r from-emerald-50 to-slate-50 border border-emerald-200 rounded-2xl">
-            <span className="font-bold text-emerald-700 select-none">Outstanding</span>
-          </div>
-        </div>
       </div>
 
       <div className="p-8 bg-gradient-to-r from-slate-50 to-emerald-50 border-l-4 border-emerald-400 rounded-2xl">

@@ -48,7 +48,7 @@ export default function ProjectsContent() {
     },
     {
       name: 'Dance Fusion Website',
-      image: '/images/proj_dance.jpeg',
+      image: '/images/proj_dance.png',
       description:
         'Dynamic web platform for dance enthusiasts with responsive design, user inquiries, and event management features.',
       tech: ['Pug', 'Node.js', 'MongoDB'],
