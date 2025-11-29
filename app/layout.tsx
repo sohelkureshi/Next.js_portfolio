@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       'Portfolio of full-stack developer Sohel Kureshi, featuring MERN stack and Next.js projects, professional experience, education and contact information.',
     images: [
       {
-        url: '/og-image.png',
+        url: '/og_image.png',
         width: 1200,
         height: 630,
         alt: 'Portfolio of Full-Stack Developer Sohel Kureshi',
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
     title: 'Sohel Kureshi | Full-Stack Developer',
     description:
       'Full-stack developer and NIT Nagpur graduate focused on MERN stack, Next.js and real-world web projects.',
-    images: ['/og-image.png'],
+    images: ['/og_image.png'],
   },
-  // 🔴 IMPORTANT: Google Search Console verification here
+  //  IMPORTANT: Google Search Console verification here
   verification: {
     google: 'Upw0N_l5B9V_9s0WPUQcFe7acOAy1BVZ5sZL_ucLKvA',
   },
