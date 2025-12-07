@@ -52,7 +52,7 @@ export default function ProjectsContent() {
       description:
         'Dynamic web platform for dance enthusiasts with responsive design, user inquiries, and event management features.',
       tech: ['Pug', 'Node.js', 'MongoDB'],
-      live: '',
+      live: 'https://dance-fusion.onrender.com/',
       github: 'https://github.com/sohelkureshi/Dance-Fusion-website',
       category: 'Entertainment',
     },
