@@ -46,16 +46,17 @@ export default function ProjectsContent() {
       github: 'https://github.com/sohelkureshi/eNotebook',
       category: 'Productivity',
     },
-    {
-      name: 'Dance Fusion Website',
-      image: '/images/proj_dance.png',
-      description:
-        'Dynamic web platform for dance enthusiasts with responsive design, user inquiries, and event management features.',
-      tech: ['Pug', 'Node.js', 'MongoDB'],
-      live: 'https://dance-fusion.onrender.com/',
-      github: 'https://github.com/sohelkureshi/Dance-Fusion-website',
-      category: 'Entertainment',
-    },
+   {
+  name: 'Useless Dance Academy',
+  image: '/images/proj_dance.png',
+  description:
+    'A fully-responsive modern dance academy website featuring smooth animations, professional blue theme and strict form validation.',
+  tech: ['Node.js', 'Express', 'Pug', 'CSS3'],
+  live: 'https://dance-fusion.onrender.com/',
+  github: 'https://github.com/sohelkureshi/Dance-Fusion-website',
+  category: 'Entertainment',
+},
+
     {
       name: 'Materials Comparison Dashboard',
       image: '/images/proj_material.png',
