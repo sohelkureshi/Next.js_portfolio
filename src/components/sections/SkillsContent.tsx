@@ -2,7 +2,7 @@
 'use client'
 
 const programmingLanguages = ['JavaScript', 'C++', 'Python', 'Java']
-const frontendSkills = ['React.js', 'Redux', 'Next.js', 'Responsive Design', 'Bootstrap', 'HTML', 'CSS']
+const frontendSkills = ['React.js', 'Redux', 'Vue.js', 'Vuex', 'Next.js', 'Responsive Design', 'HTML', 'CSS', 'Bootstrap']
 const backendSkills = ['Node.js', 'Express.js', 'MongoDB', 'MySQL']
 const toolsSkills = ['Git', 'GitHub', 'VS Code', 'AWS', 'Docker', 'Firebase']
 const dataSkills = ['Pandas', 'NumPy', 'Scikit-learn', 'Matplotlib', 'Seaborn']
