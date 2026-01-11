@@ -48,9 +48,16 @@ export default function Navbar() {
               <span className="absolute inset-0 rounded-2xl border border-white/10" />
               <span className="text-[16px] font-extrabold text-slate-900">SK</span>
             </div>
-            <div className="hidden sm:flex flex-col leading-tight">
-              <span className="text-sm font-bold text-white">Sohel Kureshi</span>
-              <span className="text-xs text-slate-300">Full-Stack Developer</span>
+            <div className="flex sm:flex-col leading-tight">
+              <span className="text-sm font-bold text-white">
+                Sohel Kureshi
+                <span className="sm:hidden text-slate-400 font-medium">
+                  {' '}| Full-Stack Dev
+                </span>
+              </span>
+              <span className="hidden sm:block text-xs text-slate-300">
+                Full-Stack Developer
+              </span>
             </div>
           </Link>
 
