@@ -62,7 +62,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-6">
             <div
               className="flex items-center gap-1 
                          px-3 py-2 
@@ -96,7 +96,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden p-2.5 rounded-xl border border-slate-600 
+            className="md:hidden p-2.5 rounded-xl border border-slate-600 
                        text-slate-200 hover:text-white hover:border-emerald-400/80 
                        bg-slate-800/90 shadow-sm transition-all"
             aria-label="Toggle Navigation"
@@ -117,7 +117,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {mobileOpen && (
-          <div className="lg:hidden mt-3 pb-4">
+          <div className="md:hidden mt-3 pb-4">
             <div className="rounded-3xl border border-slate-700 bg-slate-900/95 shadow-xl p-4">
               <div className="grid grid-cols-2 gap-3">
                 {navLinks.map((link) => {
