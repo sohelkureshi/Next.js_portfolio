@@ -1,27 +1,63 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback, useMemo } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+
+const NAV_LINKS = [
+  { name: 'About', href: '/' },
+  { name: 'Experience', href: '/experience' },
+  { name: 'Projects', href: '/projects' },
+  { name: 'Skills', href: '/skills' },
+  { name: 'Education', href: '/education' },
+  { name: 'Services', href: '/services' },
+  { name: 'Contact', href: '/contact' },
+  { name: 'Resume', href: '/resume' }
+] as const
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const pathname = usePathname()
 
-  const navLinks = [
-    { name: 'About', href: '/' },
-    { name: 'Experience', href: '/experience' },
-    { name: 'Projects', href: '/projects' },
-    { name: 'Skills', href: '/skills' },
-    { name: 'Education', href: '/education' },
-    { name: 'Services', href: '/services' },
-    { name: 'Contact', href: '/contact' },
-    { name: 'Resume', href: '/resume' }
-  ]
-
+  // Close mobile menu on route change
   useEffect(() => {
     setMobileOpen(false)
   }, [pathname])
+
+  // Memoized handlers
+  const handleLogoClick = useCallback((e: React.MouseEvent) => {
+    if (pathname === '/') {
+      e.preventDefault()
+      window.location.href = '/'
+    }
+  }, [pathname])
+
+  const toggleMobileMenu = useCallback(() => {
+    setMobileOpen(prev => !prev)
+  }, [])
+
+  const closeMobileMenu = useCallback(() => {
+    setMobileOpen(false)
+  }, [])
+
+  // Memoized link class generator
+  const getLinkClassName = useCallback((isActive: boolean, isMobile: boolean = false) => {
+    const baseClasses = 'font-semibold transition-all'
+    
+    if (isMobile) {
+      return `${baseClasses} px-4 py-4 rounded-2xl text-sm border ${
+        isActive
+          ? 'border-emerald-400 bg-emerald-400 text-slate-900 shadow-md'
+          : 'border-slate-700 text-slate-200 hover:border-emerald-400 hover:bg-slate-800'
+      }`
+    }
+    
+    return `${baseClasses} px-4 py-2 text-sm rounded-xl ${
+      isActive
+        ? 'text-slate-900 bg-emerald-400 shadow-md'
+        : 'text-slate-300 hover:text-white hover:bg-slate-700/80'
+    }`
+  }, [])
 
   return (
     <nav
@@ -36,6 +72,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             href="/"
+            onClick={handleLogoClick}
             className="flex items-center gap-2 group"
             aria-label="Sohel Kureshi Portfolio"
           >
@@ -71,20 +108,13 @@ export default function Navbar() {
                          border border-slate-700/80 
                          shadow-sm"
             >
-              {navLinks.map((link) => {
+              {NAV_LINKS.map((link) => {
                 const isActive = pathname === link.href
                 return (
                   <Link
-                    key={link.name}
+                    key={link.href}
                     href={link.href}
-                    className={`
-                      px-4 py-2 text-sm font-semibold rounded-xl transition-all
-                      ${
-                        isActive
-                          ? 'text-slate-900 bg-emerald-400 shadow-md'
-                          : 'text-slate-300 hover:text-white hover:bg-slate-700/80'
-                      }
-                    `}
+                    className={getLinkClassName(isActive)}
                   >
                     {link.name}
                   </Link>
@@ -95,11 +125,12 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            onClick={() => setMobileOpen(!mobileOpen)}
+            onClick={toggleMobileMenu}
             className="md:hidden p-2.5 rounded-xl border border-slate-600 
                        text-slate-200 hover:text-white hover:border-emerald-400/80 
                        bg-slate-800/90 shadow-sm transition-all"
             aria-label="Toggle Navigation"
+            aria-expanded={mobileOpen}
           >
             <svg
               className={`w-6 h-6 transition-transform ${mobileOpen ? 'rotate-90' : ''}`}
@@ -107,6 +138,7 @@ export default function Navbar() {
               stroke="currentColor"
               strokeWidth={2}
               viewBox="0 0 24 24"
+              aria-hidden="true"
             >
               <path d="M4 7h16" />
               <path d="M4 12h16" />
@@ -120,21 +152,14 @@ export default function Navbar() {
           <div className="md:hidden mt-3 pb-4">
             <div className="rounded-3xl border border-slate-700 bg-slate-900/95 shadow-xl p-4">
               <div className="grid grid-cols-2 gap-3">
-                {navLinks.map((link) => {
+                {NAV_LINKS.map((link) => {
                   const isActive = pathname === link.href
                   return (
                     <Link
-                      key={link.name}
+                      key={link.href}
                       href={link.href}
-                      onClick={() => setMobileOpen(false)}
-                      className={`
-                        px-4 py-4 rounded-2xl text-sm font-semibold border transition-all
-                        ${
-                          isActive
-                            ? 'border-emerald-400 bg-emerald-400 text-slate-900 shadow-md'
-                            : 'border-slate-700 text-slate-200 hover:border-emerald-400 hover:bg-slate-800'
-                        }
-                      `}
+                      onClick={closeMobileMenu}
+                      className={getLinkClassName(isActive, true)}
                     >
                       {link.name}
                     </Link>
