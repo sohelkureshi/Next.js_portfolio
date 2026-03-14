@@ -15,18 +15,21 @@ const NAV_LINKS = [
   { name: 'Resume',     href: '/resume'     },
 ] as const
 
-// ─── Scroll lock helpers — pure DOM, zero React state ───────────────────────
+// ─── Scroll lock helpers ─────────────────────────────────────────────────────
 let savedScrollY = 0
+
 function lockScroll() {
   savedScrollY = window.scrollY
-  document.body.style.cssText = `position:fixed;top:-${savedScrollY}px;left:0;right:0;overflow:hidden`
-}
-function unlockScroll() {
-  document.body.style.cssText = ''
-  window.scrollTo(0, savedScrollY)
+  document.documentElement.style.overflow = 'hidden'
+  document.body.style.overflow = 'hidden'
 }
 
-// ─── Class builders — module-level, never recreated on render ────────────────
+function unlockScroll() {
+  document.documentElement.style.overflow = ''
+  document.body.style.overflow = ''
+}
+
+// ─── Class builders ──────────────────────────────────────────────────────────
 function desktopLinkClass(active: boolean) {
   return active
     ? 'font-semibold text-sm px-4 py-2 rounded-xl text-slate-900 bg-emerald-400 shadow-md transition-all'
@@ -45,8 +48,8 @@ export default function Navbar() {
   const menuRef   = useRef<HTMLDivElement>(null)
   const buttonRef = useRef<HTMLButtonElement>(null)
 
-  // Close on route change
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' })
     if (mobileOpen) {
       unlockScroll()
       setMobileOpen(false)
@@ -60,7 +63,7 @@ export default function Navbar() {
     return unlockScroll // safety unlock on unmount
   }, [mobileOpen])
 
-  // Outside click (pointerdown fires before click — snappier feel)
+  // Outside click
   useEffect(() => {
     if (!mobileOpen) return
     const handler = (e: PointerEvent) => {
@@ -90,7 +93,7 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Backdrop — always in DOM, CSS-only opacity transition, no state flicker */}
+      {/* Backdrop */}
       <div
         aria-hidden="true"
         onClick={close}
@@ -129,7 +132,7 @@ export default function Navbar() {
               ))}
             </div>
 
-            {/* Hamburger → X (SVG line morphing, no icon swap) */}
+            {/* Hamburger → X */}
             <button
               ref={buttonRef}
               onClick={toggle}
@@ -159,7 +162,7 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* Mobile menu — grid-rows trick: smooth height with no JS height calc */}
+          {/* Mobile menu */}
           <div
             className="md:hidden"
             style={{
