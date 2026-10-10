@@ -30,7 +30,7 @@ export default function AboutContent() {
           <div className="mt-3 w-24 h-1.5 mx-auto rounded-full bg-gradient-to-r from-emerald-500 via-emerald-400 to-emerald-500" />
 
           <p className="mt-4 text-base md:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed font-medium">
-            Crafting digital experiences with passion and precision
+            Sohel Kureshi, full-stack developer crafting digital experiences with passion and precision
           </p>
         </div>
 
@@ -56,7 +56,7 @@ export default function AboutContent() {
           <div className="space-y-8 lg:space-y-10">
             {/* Description */}
             <p className="text-base md:text-lg leading-relaxed max-w-2xl text-slate-700 font-medium">
-              Graduate of{' '}
+              I am <strong className="text-slate-900">Sohel Kureshi</strong>, a graduate of{' '}
               <strong className="text-xl md:text-2xl font-black text-emerald-700">
                 NIT Nagpur
               </strong>{' '}

@@ -2,9 +2,16 @@ import type { Metadata } from 'next'
 import ResumeContent from '../../src/components/sections/ResumeContent'
 
 export const metadata: Metadata = {
-  title: 'Resume | Full-Stack Developer - Sohel Kureshi',
+  title: 'Resume | Sohel Kureshi Full-Stack Developer',
   description:
-    'Download the resume of full-stack developer Sohel Kureshi, NIT Nagpur graduate. View professional summary, skills, projects and experience in MERN stack and modern web development.',
+    'Download the resume of full-stack developer Sohel Kureshi, also searched as Sohail Qureshi, Sohel Qureshi and Sohail Kureshi. View skills, projects and MERN stack experience.',
+  keywords: [
+    'Sohel Kureshi resume',
+    'Sohail Qureshi resume',
+    'Sohel Qureshi resume',
+    'Sohail Kureshi resume',
+    'Sohel Kureshi full-stack developer',
+  ],
   alternates: {
     canonical: '/resume',
   },

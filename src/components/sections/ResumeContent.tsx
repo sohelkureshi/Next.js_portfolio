@@ -22,7 +22,7 @@ export default function ResumeContent() {
         <div className="mt-3 w-24 h-1.5 mx-auto rounded-full bg-gradient-to-r from-emerald-500 via-emerald-400 to-emerald-500" />
 
         <p className="mt-4 text-base md:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed font-medium">
-          Full-Stack Developer • NIT Nagpur Graduate • MERN Stack Specialist
+          Sohel Kureshi - Full-Stack Developer, NIT Nagpur Graduate and MERN Stack Specialist
         </p>
       </div>
 
@@ -114,7 +114,8 @@ export default function ResumeContent() {
         </div>
 
         <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-          B.Tech graduate from{" "}
+          <span className="font-semibold text-slate-900">Sohel Kureshi</span>{" "}
+          is a B.Tech graduate from{" "}
           <span className="font-semibold text-slate-900">NIT Nagpur</span> with
           full-stack development experience. Skilled in the MERN stack, Next.js
           and modern web technologies. Completed internships and launched
