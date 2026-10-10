@@ -22,7 +22,7 @@ export default function ResumeContent() {
         <div className="mt-3 w-24 h-1.5 mx-auto rounded-full bg-gradient-to-r from-emerald-500 via-emerald-400 to-emerald-500" />
 
         <p className="mt-4 text-base md:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed font-medium">
-          Full-Stack Developer • NIT Nagpur Graduate • MERN Stack Specialist
+Software Engineer • NIT Nagpur Graduate • MERN Stack Specialist
         </p>
       </div>
 

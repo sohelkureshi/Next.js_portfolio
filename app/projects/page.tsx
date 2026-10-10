@@ -4,7 +4,7 @@ import ProjectsContent from '../../src/components/sections/ProjectsContent'
 export const metadata: Metadata = {
   title: 'Projects | MERN & Next.js Portfolio - Sohel Kureshi',
   description:
-    'Portfolio projects by full-stack developer Sohel Kureshi, including MERN stack apps, Next.js projects, real-time collaboration tools, analytics dashboards and AI-powered solutions.',
+    'Portfolio projects by software engineer Sohel Kureshi, including MERN stack apps, Next.js projects, real-time collaboration tools, analytics dashboards and AI-powered solutions.',
   alternates: {
     canonical: '/projects',
   },

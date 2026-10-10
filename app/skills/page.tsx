@@ -4,7 +4,7 @@ import SkillsContent from '../../src/components/sections/SkillsContent'
 export const metadata: Metadata = {
   title: 'Skills | MERN, Next.js & Data Analytics - Sohel Kureshi',
   description:
-    'Technical skills of full-stack developer Sohel Kureshi, including JavaScript, MERN stack, Next.js, databases, DevOps tools and data analytics libraries such as Pandas and Scikit-learn.',
+    'Technical skills of software engineer Sohel Kureshi, including JavaScript, MERN stack, Next.js, databases, DevOps tools and data analytics libraries such as Pandas and Scikit-learn.',
   alternates: {
     canonical: '/skills',
   },

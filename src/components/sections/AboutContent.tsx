@@ -42,7 +42,7 @@ export default function AboutContent() {
             <div className="relative rounded-[2rem] overflow-hidden shadow-xl bg-slate-100 border border-slate-200">
               <Image
                 src="/images/sohel_image.jpg"
-                alt="Portrait of full-stack developer Sohel Kureshi"
+alt="Portrait of software engineer Sohel Kureshi"
                 width={600}
                 height={600}
                 className="w-full h-full object-cover"

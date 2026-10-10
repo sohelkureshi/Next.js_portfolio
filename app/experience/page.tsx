@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import ExperienceContent from '../../src/components/sections/ExperienceContent'
 
 export const metadata: Metadata = {
-  title: 'Experience | Full-Stack Developer - Sohel Kureshi',
+  title: 'Experience | Software Engineer - Sohel Kureshi',
   description:
-    'Professional experience of full-stack developer Sohel Kureshi, including CodTech IT Solutions internship focusing on Node.js, Express, MongoDB, security and real-time collaboration.',
+    'Professional experience of software engineer Sohel Kureshi, including CodTech IT Solutions internship focusing on Node.js, Express, MongoDB, security and real-time collaboration.',
   alternates: {
     canonical: '/experience',
   },

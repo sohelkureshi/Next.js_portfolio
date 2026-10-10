@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import ContactContent from '../../src/components/sections/ContactContent'
 
 export const metadata: Metadata = {
-  title: 'Contact | Full-Stack Developer in India - Sohel Kureshi',
+  title: 'Contact | Software Engineer in India - Sohel Kureshi',
   description:
-    "Contact full-stack developer Sohel Kureshi for MERN stack, Next.js and modern web application projects. Let's collaborate and build something impactful.",
+    "Contact software engineer Sohel Kureshi for MERN stack, Next.js and modern web application projects. Let's collaborate and build something impactful.",
   alternates: {
     canonical: '/contact',
   },
