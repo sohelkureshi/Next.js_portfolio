@@ -1,7 +1,6 @@
 // app/layout.tsx
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-// @ts-expect-error Next.js handles CSS side-effect imports at build time.
 import './globals.css'
 import Navbar from '../src/components/layout/Navbar'
 import Footer from '../src/components/layout/Footer'
